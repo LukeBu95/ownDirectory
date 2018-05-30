@@ -9,11 +9,25 @@ class dbConnect{
 	private $dataset = array();
 
 
-	public function select($sql){
+	public function selectAll($sql){
 		foreach ($this->pdo->query($sql) as $row) {
 			array_push($this->dataset,$row);
 		}
 		return $this->dataset;
+	}
+
+	public function selectSingle($sql){
+		$statement = $this->pdo->prepare($sql);
+		$statement->execute();
+		$row = $statement->fetch();
+		return $row;
+	}
+
+	public function selectSingleParam($sql,$username){
+		$statement = $this->pdo->prepare($sql);
+		$statement->execute(array(':username' => $username));
+		$row = $statement->fetch();
+		return $row;
 	}
 
 	public function selectParam($sql){

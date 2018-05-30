@@ -11,7 +11,7 @@ if (!isset($_SESSION['username'])) {
 	if (isset($_POST['username'])) {
 		$username = $_POST['username'];
 		$pass = $_POST['pw'];
-		$arrayWorker = $dbconnect->select("Select * from workers");
+		$arrayWorker = $dbconnect->selectAll("Select * from workers");
 		$is_Worker = false;
 
 		foreach ($arrayWorker as $key => $value) {
@@ -34,6 +34,6 @@ if (!isset($_SESSION['username'])) {
 
 if (isset($_SESSION['username'])) {
 
-	include_once "bestell_form.html";
+	header("Location: features.html");
 
 }
