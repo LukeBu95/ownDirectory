@@ -7,9 +7,8 @@ session_start();
 $dbconnect = new dbConnect();
 
 if (!isset($_SESSION['username'])) {
-	require_once "login_form.html";
-	if (isset($_POST['username'])) {
-		$username = $_POST['username'];
+	if (isset($_POST['user'])) {
+		$username = $_POST['user'];
 		$pass = $_POST['pw'];
 		$arrayWorker = $dbconnect->selectAll("Select * from workers");
 		$is_Worker = false;
@@ -28,12 +27,24 @@ if (!isset($_SESSION['username'])) {
 			echo $is_Worker . " " . strcmp("tequilala", $pass);
 		}
 	}
-	echo "<script> document.location.reload </script>";
-	echo "<script> document.location.reload </script>";
+
 }
 
 if (isset($_SESSION['username'])) {
 
-	header("Location: features.html");
+    //echo "<script> alert('test123') </script>";
+
+    header("Status: 200");
+    header("Location: ./buchung");
+
 
 }
+
+?>
+
+<script type="text/javascript">
+    function verkaufsstart(){
+
+    }
+
+</script>

@@ -57,7 +57,7 @@
 
     <div class="page-inner">
 
-        <header id="gtco-header" class="gtco-cover" role="banner" style="background-image: url(images/img_4.jpg)">
+        <header id="gtco-header" class="gtco-cover_login" role="banner" style="background-image: url(images/img_4.jpg)">
             <div class="overlay"></div>
             <div class="gtco-container">
                 <div class="row">
@@ -81,13 +81,13 @@
                                                     <div class="row form-group">
                                                         <div class="col-md-12">
                                                             <label for="username">Verkäufername</label>
-                                                            <input type="text" class="form-control" id="username">
+                                                            <input type="text" class="form-control" name="user" id="username">
                                                         </div>
                                                     </div>
                                                     <div class="row form-group">
                                                         <div class="col-md-12">
                                                             <label for="password">Password</label>
-                                                            <input type="password" class="form-control" id="password">
+                                                            <input type="password" class="form-control" name="pw" id="password">
                                                         </div>
                                                     </div>
 
