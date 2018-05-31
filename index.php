@@ -1,3 +1,12 @@
+<?php
+
+if(isset($_COOKIE["username"])) {
+	header("Status: 200");
+	header("Location: ./buchung");
+}
+
+?>
+
 <html>
 <head>
     <meta charset="utf-8">
@@ -48,12 +57,11 @@
     <![endif]-->
 
 </head>
-<body>
+<body style="background-image: url(../images/img_bg_2.jpg)">
 
 <div class="gtco-loader"></div>
 
 <div id="page">
-
 
     <div class="page-inner">
 
@@ -66,15 +74,16 @@
 
                         <div class="row row-mt-15em">
                             <div class="col-md-7 mt-text animate-box" data-animate-effect="fadeInUp">
-                                <span class="intro-text-small">Welcome to Splash</span>
-                                <h1>Build website using this template.</h1>
+                                <span class="intro-text-small">Welcome to Tequi-la-la</span>
+                                <h1>The best Bar in Town</h1>
                             </div>
                             <div class="col-md-4 col-md-push-1 animate-box" data-animate-effect="fadeInRight">
                                 <div class="form-wrap">
                                     <div class="tab">
                                         <ul class="tab-menu">
-                                            <li class="active gtco-first"><a href="#" data-tab="login">Login</a></li>
-                                        </ul>
+                                            <li class="active gtco-first"><a href="#" data-tab="login">Verkäufer-login</a></li>
+											<li class="gtco-second"><a href="#" data-tab="signup">Kunden-login</a></li>
+										</ul>
                                         <div class="tab-content">
                                             <div class="tab-content-inner active" data-content="login">
                                                 <form action="login.php" method="post">
@@ -98,6 +107,23 @@
                                                     </div>
                                                 </form>
                                             </div>
+
+											<div class="tab-content-inner" data-content="signup">
+												<form action="#">
+													<div class="row form-group">
+														<div class="col-md-12">
+															<label for="username">Username or Email</label>
+															<input type="text" class="form-control" id="username">
+														</div>
+													</div>
+
+													<div class="row form-group">
+														<div class="col-md-12">
+															<input type="submit" class="btn btn-primary" value="Sign up">
+														</div>
+													</div>
+												</form>
+											</div>
 
                                         </div>
                                     </div>
