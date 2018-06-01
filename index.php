@@ -1,11 +1,3 @@
-<?php
-
-if(isset($_COOKIE["username"])) {
-	header("Status: 200");
-	header("Location: ./buchung");
-}
-
-?>
 
 <html>
 <head>

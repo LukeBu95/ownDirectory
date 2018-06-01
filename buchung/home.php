@@ -1,8 +1,14 @@
 <?php
 
-if (!isset($_COOKIE["username"])) {
-	header("Status: 401");
-	header("Location: http://" . $_SERVER["SERVER_NAME"]);
+if (!isset($_GET["usr"])) {
+	echo "<script> window.location.href='../destroy.php' </script>";
+}else{
+
+	$dbConntect = new dbConnect();
+	$userid = $_GET["usr"];
+	echo "<script> alert('id:".$userid."') </script>";
+
+	$username = $dbConntect->getUsername($userid);
 }
 
 ?>
@@ -65,32 +71,32 @@ if (!isset($_COOKIE["username"])) {
 			$('.bestell').click(function () {
 
 				$("tr:last").after(
-				'<tr>'+
-				'<td>'+
-				'<div class="form-group">'+
-					'<div class="col-md-4">'+
-					'<input id="textinput" name="textinput" type="text" placeholder="Anzahl" class="form-control input-md">'+
-					'</div>'+
-					'</div>'+
-					'</td>'+
-					'<td>'+
-					'<div class="form-group">'+
-					'<div class="col-md-12">'+
-					'<select id="selectbasic" name="selectbasic" class="form-control">'+
-					'<option value="1">Option jbasdjkbasdkjbasdjkbasdkjasdkjasdkjasdkj one </option>'+
-					'<option value="2">Option two</option>'+
-				'</select>'+
-				'</div>'+
-				'</div>'+
-				'</td>'+
-				'<td>'+
-				'<div class="col-md-8">'+
-					'<input id="textinput" name="textinput" type="text" placeholder="preis" class="form-control input-md">'+
-					'</div>'+
-					'</td>'+
-					'<td>'+
-					'<input type="submit" class="btn btn-primary" value="Bestellen">'+
-					'</td>'+
+					'<tr>' +
+					'<td>' +
+					'<div class="form-group">' +
+					'<div class="col-md-4">' +
+					'<input id="textinput" name="textinput" type="text" placeholder="Anzahl" class="form-control input-md">' +
+					'</div>' +
+					'</div>' +
+					'</td>' +
+					'<td>' +
+					'<div class="form-group">' +
+					'<div class="col-md-12">' +
+					'<select id="selectbasic" name="selectbasic" class="form-control">' +
+					'<option value="1">Option jbasdjkbasdkjbasdjkbasdkjasdkjasdkjasdkj one </option>' +
+					'<option value="2">Option two</option>' +
+					'</select>' +
+					'</div>' +
+					'</div>' +
+					'</td>' +
+					'<td>' +
+					'<div class="col-md-8">' +
+					'<input id="textinput" name="textinput" type="text" placeholder="preis" class="form-control input-md">' +
+					'</div>' +
+					'</td>' +
+					'<td>' +
+					'<input type="submit" class="btn btn-primary" value="Bestellen">' +
+					'</td>' +
 					'</tr>'
 				);
 
@@ -120,46 +126,60 @@ if (!isset($_COOKIE["username"])) {
 					</div>
 					<div class="col-md-24 col-md-offset-0 text-left">
 
-						<form action="buchung.php">
-						<table border="0">
-							<tbody>
-							<tr>
-								<td>Wie viel verkauft ?</td>
-								<td>Was wurde verkauft ?</td>
-								<td>Für wieviel verkauft ?</td>
-								<td>&nbsp;</td>
-							</tr>
-							<tr>
-								<td>
-									<div class="form-group">
-										<div class="col-md-5">
-											<input id="item_anzahl" name="item_anzahl" type="number" placeholder="" class="form-control input-md">
+						<form action="buchung.php" target="_self" method="post">
+							<input type="hidden" name="username" value="<?php $username?>">
+							<input type="hidden" name="userid" value="<?php $userid?>">
+							<table border="1">
+								<tbody>
+								<tr>
+									<td>Was wurde verkauft ?</td>
+									<td>Wie viel verkauft ?</td>
+									<td>Für wieviel verkauft ?</td>
+									<td>Bar oder auf Karte ?</td>
+									<td>&nbsp;</td>
+								</tr>
+								<tr>
+									<td align=center>
+										<div class="form-group">
+											<div class="col-md-12">
+												<select id="item_name" name="item_name" class="form-control">
+													<option value="1">Option jbasdjkbasdkjbasdjkbasdkjasdkjasdkjasdkj
+														one
+													</option>
+													<option value="2">Option two</option>
+												</select>
+											</div>
 										</div>
-									</div>
-								</td>
-								<td>
-									<div class="form-group">
-										<div class="col-md-12">
-											<select id="item_name" name="item_name" class="form-control">
-												<option value="1">Option jbasdjkbasdkjbasdjkbasdkjasdkjasdkjasdkj one
-												</option>
-												<option value="2">Option two</option>
-											</select>
+									</td>
+									<td align=center>
+										<div class="form-group">
+											<div class="col-md-5">
+												<input id="item_anzahl" name="item_anzahl" type="number" placeholder="" class="form-control input-md">
+											</div>
 										</div>
-									</div>
-								</td>
-								<td>
-									<div class="col-md-8">
-										<input id="item_price" name="item_price" type="text" placeholder="Trinkgeld" class="form-control input-md">
-									</div>
-								</td>
-								<td>
-									<input type="submit" class="btn btn-primary" value="Bestellen">
-								</td>
-							</tr>
+									</td>
+									<td align=center>
+										<div class="col-md-8">
+											<input id="item_price" name="item_price" type="text" placeholder="Trinkgeld" class="form-control input-md">
+										</div>
+									</td>
+									<td align=center>
+										<div class="form-group">
+											<label class="col-md-4 control-label" for="checkboxes"></label>
+											<div class="col-md-4">
+												<label class="checkbox" for="checkboxes-0">
+													<input type="checkbox" name="item_barzahlung" id="checkboxes-0" value="1">
+												</label>
+											</div>
+										</div>
+									</td>
+									<td>
+										<input type="submit" class="btn btn-primary" value="Bestellen">
+									</td>
+								</tr>
 
-							</tbody>
-						</table>
+								</tbody>
+							</table>
 						</form>
 
 

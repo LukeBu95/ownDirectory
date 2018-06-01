@@ -8,31 +8,23 @@
  * Time: 16:58
  */
 
-if (isset($_COOKIE["username"])) {
+if (isset($_GET["usr"])) {
 
 	$adminUser = false;
-	if(!isset($_COOKIE["admin"])) {
+	if (!isset($_COOKIE["admin"])) {
 		include "../dbconnect.php";
 		$dbconnect = new dbConnect();
-		$arrayUser = $dbconnect->selectSingleParam("Select admin from workers where username = :username",$_COOKIE["username"]);
-		foreach ($arrayUser as $key => $value) {
-			if (strcmp($value,"1" ) == 0) {
-				$adminUser = true;
-			}
-		}
+		$adminUser = $dbconnect->loginAdmin($_GET["usr"]);
+
 	}
-
-	if ($adminUser){
-
-		setcookie("admin", true, time() + 28000 , "/"); // 86400 = 1 day
+	if ($adminUser) {
 		include_once "nav_admin.html";
-	}
-	else{
-		setcookie("admin", false, time() + 28000 , "/"); // 86400 = 1 day
+	} else {
 		include_once "nav_user.html";
 	}
 
 }
+
 
 
 
