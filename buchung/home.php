@@ -1,28 +1,12 @@
-<?php
-
-if (!isset($_GET["usr"])) {
-	echo "<script> window.location.href='../destroy.php' </script>";
-}else{
-
-	$dbConntect = new dbConnect();
-	$userid = $_GET["usr"];
-	echo "<script> alert('id:".$userid."') </script>";
-
-	$username = $dbConntect->getUsername($userid);
-}
-
-?>
-
-
 <!DOCTYPE HTML>
 <html>
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Tequilala Buchungen</title>
+	<title>Christus für Hannover</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Tequilala Buchungen"/>
-	<meta name="author" content="David Adams"/>
+	<meta name="description" content="Christus für Hannover"/>
+	<meta name="author" content="Lukas Buttke"/>
 
 
 	<!-- Facebook and Twitter integration -->

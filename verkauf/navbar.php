@@ -7,7 +7,7 @@
  * Date: 30.05.2018
  * Time: 16:58
  */
-include_once "nav_admin.html";
+include_once "nav_user.html";
 
 if (isset($_GET["usr"])) {
 

@@ -3,11 +3,24 @@
 	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Tequilala Buchungen</title>
+	<title>Splash &mdash; Free Website Template, Free HTML5 Template by FreeHTML5.co</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Tequilala Buchungen" />
-	<meta name="author" content="David Adams" />
+	<meta name="description" content="Free HTML5 Website Template by FreeHTML5.co" />
+	<meta name="keywords" content="free website templates, free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
+	<meta name="author" content="FreeHTML5.co" />
+	<!-- 
+	//////////////////////////////////////////////////////
 
+	FREE HTML5 TEMPLATE 
+	DESIGNED & DEVELOPED by FREEHTML5.CO
+		
+	Website: 		http://freehtml5.co/
+	Email: 			info@freehtml5.co
+	Twitter: 		http://twitter.com/fh5co
+	Facebook: 		https://www.facebook.com/fh5co
+
+	//////////////////////////////////////////////////////
+	 -->
 
   	<!-- Facebook and Twitter integration -->
 	<meta property="og:title" content=""/>
@@ -45,8 +58,8 @@
 	<script src="../js/modernizr-2.6.2.min.js"></script>
 	<!-- FOR IE9 below -->
 	<!--[if lt IE 9]>
-		<script src="../js/respond.min.js"></script>
-		<![endif]-->
+        <script src="../js/respond.min.js"></script>
+        <![endif]-->
 
 	</head>
 	<body>
@@ -60,103 +73,7 @@
 
 		<?php include "navbar.php"; ?>
 
-	<header id="gtco-header" class="gtco-cover" role="banner" style="background-image: url(../images/img_4.jpg)">
-		<div class="overlay"></div>
-		<div class="gtco-container">
-			<div class="row">
-
-			</div>
-		</div>
-	</header>
-	
-	<div class="gtco-section border-bottom">
-		<div class="gtco-container">
-			<div class="row">
-				<div class="col-md-8 col-md-offset-2 text-center gtco-heading">
-					<h2>Beautiful Images</h2>
-					<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-lg-4 col-md-4 col-sm-6">
-					<a href="../images/img_2.jpg" class="fh5co-project-item image-popup">
-						<figure>
-							<div class="overlay"><i class="ti-plus"></i></div>
-							<img src="../images/img_2.jpg" alt="Image" class="img-responsive">
-						</figure>
-						<div class="fh5co-text">
-							<h2>Constructive heading</h2>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia..</p>
-						</div>
-					</a>
-				</div>
-				<div class="col-lg-4 col-md-4 col-sm-6">
-					<a href="../images/img_3.jpg" class="fh5co-project-item image-popup">
-						<figure>
-							<div class="overlay"><i class="ti-plus"></i></div>
-							<img src="../images/img_3.jpg" alt="Image" class="img-responsive">
-						</figure>
-						<div class="fh5co-text">
-							<h2>Constructive heading</h2>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia..</p>
-						</div>
-					</a>
-				</div>
-				<div class="col-lg-4 col-md-4 col-sm-6">
-					<a href="../images/img_4.jpg" class="fh5co-project-item image-popup">
-						<figure>
-							<div class="overlay"><i class="ti-plus"></i></div>
-							<img src="../images/img_4.jpg" alt="Image" class="img-responsive">
-						</figure>
-						<div class="fh5co-text">
-							<h2>Constructive heading</h2>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia..</p>
-						</div>
-					</a>
-				</div>
-
-				<div class="col-lg-4 col-md-4 col-sm-6">
-					<a href="../images/img_1.jpg" class="fh5co-project-item image-popup">
-						<figure>
-							<div class="overlay"><i class="ti-plus"></i></div>
-							<img src="../images/img_1.jpg" alt="Image" class="img-responsive">
-						</figure>
-						<div class="fh5co-text">
-							<h2>Constructive heading</h2>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia..</p>
-						</div>
-					</a>
-				</div>
-				<div class="col-lg-4 col-md-4 col-sm-6">
-					<a href="../images/img_5.jpg" class="fh5co-project-item image-popup">
-						<figure>
-							<div class="overlay"><i class="ti-plus"></i></div>
-							<img src="../images/img_5.jpg" alt="Image" class="img-responsive">
-						</figure>
-						<div class="fh5co-text">
-							<h2>Constructive heading</h2>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia..</p>
-						</div>
-					</a>
-				</div>
-				<div class="col-lg-4 col-md-4 col-sm-6">
-					<a href="../images/img_6.jpg" class="fh5co-project-item image-popup">
-						<figure>
-							<div class="overlay"><i class="ti-plus"></i></div>
-							<img src="../images/img_6.jpg" alt="Image" class="img-responsive">
-						</figure>
-						<div class="fh5co-text">
-							<h2>Constructive heading</h2>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia..</p>
-						</div>
-					</a>
-				</div>
-
-			</div>
-		</div>
-	</div>
-	
-	<div id="gtco-features" class="border-bottom">
+		<div id="gtco-features" class="border-bottom">
 		<div class="gtco-container">
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2 text-center gtco-heading animate-box">
@@ -242,90 +159,6 @@
 			</div>
 		</div>
 	</div>
-
-	<div id="gtco-counter" class="gtco-section">
-		<div class="gtco-container">
-
-			<div class="row">
-				<div class="col-md-8 col-md-offset-2 text-center gtco-heading animate-box">
-					<h2>Fun Facts</h2>
-					<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
-				</div>
-			</div>
-
-			<div class="row">
-				
-				<div class="col-md-3 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
-					<div class="feature-center">
-						<span class="icon">
-							<i class="ti-settings"></i>
-						</span>
-						<span class="counter js-counter" data-from="0" data-to="22070" data-speed="5000" data-refresh-interval="50">1</span>
-						<span class="counter-label">Creativity Fuel</span>
-
-					</div>
-				</div>
-				<div class="col-md-3 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
-					<div class="feature-center">
-						<span class="icon">
-							<i class="ti-face-smile"></i>
-						</span>
-						<span class="counter js-counter" data-from="0" data-to="97" data-speed="5000" data-refresh-interval="50">1</span>
-						<span class="counter-label">Happy Clients</span>
-					</div>
-				</div>
-				<div class="col-md-3 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
-					<div class="feature-center">
-						<span class="icon">
-							<i class="ti-briefcase"></i>
-						</span>
-						<span class="counter js-counter" data-from="0" data-to="402" data-speed="5000" data-refresh-interval="50">1</span>
-						<span class="counter-label">Projects Done</span>
-					</div>
-				</div>
-				<div class="col-md-3 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
-					<div class="feature-center">
-						<span class="icon">
-							<i class="ti-time"></i>
-						</span>
-						<span class="counter js-counter" data-from="0" data-to="212023" data-speed="5000" data-refresh-interval="50">1</span>
-						<span class="counter-label">Hours Spent</span>
-
-					</div>
-				</div>
-					
-			</div>
-		</div>
-	</div>
-
-	<div id="gtco-products">
-		<div class="gtco-container">
-			<div class="row">
-				<div class="col-md-8 col-md-offset-2 text-center gtco-heading">
-					<h2>More Products</h2>
-					<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
-				</div>
-			</div>
-			<div class="row">
-				<div class="owl-carousel owl-carousel-carousel">
-					<div class="item">
-						<a href="#"><img src="../images/img_1.jpg" alt="Free HTML5 Bootstrap Template by FreeHTML5.co"></a>
-					</div>
-					<div class="item">
-						<a href="#"><img src="../images/img_2.jpg" alt="Free HTML5 Bootstrap Template by FreeHTML5.co"></a>
-					</div>
-					<div class="item">
-						<a href="#"><img src="../images/img_3.jpg" alt="Free HTML5 Bootstrap Template by FreeHTML5.co"></a>
-					</div>
-					<div class="item">
-						<a href="#"><img src="../images/img_4.jpg" alt="Free HTML5 Bootstrap Template by FreeHTML5.co"></a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	
 
 	<div id="gtco-subscribe">
 		<div class="gtco-container">

@@ -3,10 +3,10 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Tequilala Buchungen</title>
+    <title>Christus für Hannover</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Tequilala Buchungen"/>
-    <meta name="author" content="David Adams"/>
+    <meta name="description" content="Christus für Hannover"/>
+    <meta name="author" content="Lukas Buttke"/>
 
 
     <!-- Facebook and Twitter integration -->
@@ -66,19 +66,19 @@
 
                         <div class="row row-mt-15em">
                             <div class="col-md-7 mt-text animate-box" data-animate-effect="fadeInUp">
-                                <span class="intro-text-small">Welcome to Tequi-la-la</span>
-                                <h1>The best Bar in Town</h1>
+                                <span class="intro-text-small">Welcome to cfh</span>
+                                <h1>Title schrift</h1>
                             </div>
                             <div class="col-md-4 col-md-push-1 animate-box" data-animate-effect="fadeInRight">
                                 <div class="form-wrap">
                                     <div class="tab">
                                         <ul class="tab-menu">
-                                            <li class="active gtco-first"><a href="#" data-tab="login">Verkäufer-login</a></li>
-											<li class="gtco-second"><a href="#" data-tab="signup">Kunden-login</a></li>
+                                            <li class="active gtco-first"><a href="#" data-tab="login">Lounge-team</a></li>
+											<li class="gtco-second"><a href="#" data-tab="signup">Buchungs-team</a></li>
 										</ul>
                                         <div class="tab-content">
                                             <div class="tab-content-inner active" data-content="login">
-                                                <form action="login.php" method="post">
+                                                <form action="verkauf" method="post">
                                                     <div class="row form-group">
                                                         <div class="col-md-12">
                                                             <label for="username">Verkäufername</label>
@@ -101,17 +101,23 @@
                                             </div>
 
 											<div class="tab-content-inner" data-content="signup">
-												<form action="#">
+												<form action="buchung" method="post">
 													<div class="row form-group">
 														<div class="col-md-12">
-															<label for="username">Username or Email</label>
-															<input type="text" class="form-control" id="username">
+															<label for="username">Kontrolleurname</label>
+															<input type="text" class="form-control" name="user" id="username">
+														</div>
+													</div>
+													<div class="row form-group">
+														<div class="col-md-12">
+															<label for="password">Password</label>
+															<input type="password" class="form-control" name="pw" id="password">
 														</div>
 													</div>
 
 													<div class="row form-group">
 														<div class="col-md-12">
-															<input type="submit" class="btn btn-primary" value="Sign up">
+															<input type="submit" class="btn btn-primary" value="Login">
 														</div>
 													</div>
 												</form>
